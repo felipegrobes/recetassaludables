@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function Guarantee() {
   return (
-    <section id="garantia" className="bg-background">
+    <section id="garantia" className="bg-muted">
       <div className="container">
         <div className="max-w-3xl mx-auto text-center border-2 border-primary/20 bg-card p-8 md:p-12 rounded-2xl shadow-lg">
             <div className="mx-auto mb-6 flex justify-center">

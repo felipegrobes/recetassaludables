@@ -39,7 +39,7 @@ export default function Pricing() {
                 </div>
 
                 <div className="mt-12 grid md:grid-cols-2 gap-8 max-w-4xl mx-auto items-start">
-                    <Card className="flex flex-col bg-card">
+                    <Card className="flex flex-col bg-card text-card-foreground">
                         <CardHeader>
                             <CardTitle className="font-headline text-2xl">Plan Básico</CardTitle>
                         </CardHeader>
@@ -56,11 +56,11 @@ export default function Pricing() {
                             <p className="text-sm text-muted-foreground mt-4">Acceso por 6 meses</p>
                         </CardContent>
                         <CardFooter className="flex-col items-stretch gap-4">
-                            <div className="text-4xl font-bold text-center text-card-foreground">$3,90 <span className="text-lg font-medium text-muted-foreground">USD</span></div>
+                            <div className="text-4xl font-bold text-center">$3,90 <span className="text-lg font-medium text-muted-foreground">USD</span></div>
                             <Button asChild variant="outline" className="w-full">
                                 <Link href="#">Elegir Básico</Link>
                             </Button>
-                            <div className="text-center mt-2 max-w-md mx-auto text-card-foreground">
+                            <div className="text-center mt-2 max-w-md mx-auto">
                                 <p className="inline-block bg-destructive text-destructive-foreground font-bold text-sm px-2 py-1">¡NO TE PREOCUPES!</p>
                                 <p className="text-xs text-muted-foreground mt-2">
                                     El valor de $3,90 USD se convertirá automáticamente a tu moneda y podrás pagar con métodos locales de tu país.
@@ -69,7 +69,7 @@ export default function Pricing() {
                         </CardFooter>
                     </Card>
 
-                    <Card className="flex flex-col border-2 border-accent shadow-2xl relative transition-transform hover:scale-105 bg-card">
+                    <Card className="flex flex-col border-2 border-accent shadow-2xl relative transition-transform hover:scale-105 bg-card text-card-foreground">
                         <Badge variant="secondary" className="absolute -top-3 left-1/2 -translate-x-1/2 bg-accent text-accent-foreground">Más Popular</Badge>
                         <CardHeader>
                             <CardTitle className="font-headline text-2xl">Plan Premium</CardTitle>
@@ -89,11 +89,11 @@ export default function Pricing() {
                              <p className="text-sm font-bold text-primary mt-4">Acceso de por vida</p>
                         </CardContent>
                         <CardFooter className="flex-col items-stretch gap-4">
-                            <div className="text-4xl font-bold text-center text-card-foreground">$5,90 <span className="text-lg font-medium text-muted-foreground">USD</span></div>
+                            <div className="text-4xl font-bold text-center">$5,90 <span className="text-lg font-medium text-muted-foreground">USD</span></div>
                             <Button asChild className="w-full">
                                 <Link href="#">Elegir Premium</Link>
                             </Button>
-                            <div className="text-center mt-2 max-w-md mx-auto text-card-foreground">
+                            <div className="text-center mt-2 max-w-md mx-auto">
                                 <p className="inline-block bg-destructive text-destructive-foreground font-bold text-sm px-2 py-1">¡NO TE PREOCUPES!</p>
                                 <p className="text-xs text-muted-foreground mt-2">
                                     El valor de $5,90 USD se convertirá automáticamente a tu moneda y podrás pagar con métodos locales de tu país.
