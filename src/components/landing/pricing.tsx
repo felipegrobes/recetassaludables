@@ -5,10 +5,7 @@ import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter }
 import { Badge } from '@/components/ui/badge';
 
 const basicFeatures = [
-  { text: "+1500 Recetas Saludables", icon: CheckCircle2, className: "text-green-500" },
-  { text: "Guías de nutrición", icon: CheckCircle2, className: "text-green-500" },
-  { text: "Planes de comidas semanales", icon: CheckCircle2, className: "text-green-500" },
-  { text: "Acceso a comunidad exclusiva", icon: CheckCircle2, className: "text-green-500" }
+  { text: "+1500 Recetas Saludables", icon: CheckCircle2, className: "text-green-500" }
 ];
 
 const premiumFeatures = [
