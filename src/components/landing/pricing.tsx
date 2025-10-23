@@ -65,6 +65,7 @@ export default function Pricing() {
                                 <p className="text-xs text-muted-foreground mt-2">
                                     El valor de $3,90 USD se convertirá automáticamente a tu moneda y podrás pagar con métodos locales de tu país.
                                 </p>
+                                <p className="text-sm font-bold text-primary mt-4">¡Tenemos una oferta MÁS ventajosa para ti! Mira abajo👇</p>
                             </div>
                         </CardFooter>
                     </Card>
@@ -76,7 +77,7 @@ export default function Pricing() {
                         </CardHeader>
                         <CardContent className="flex-1">
                              <div className="mb-4 flex justify-center">
-                                <Image src="/images/Logo.webp" alt="eBook Premium" width={225} height={150} className="rounded-md" />
+                                <Image src="/images/Logo.webp" alt="eBook Premium" width={338} height={225} className="rounded-md" />
                             </div>
                             <ul className="space-y-3">
                                 {premiumFeatures.map((feature, i) => (
