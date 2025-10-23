@@ -23,7 +23,7 @@ const steps = [
 
 export default function HowItWorks() {
     return (
-        <section id="como-funciona">
+        <section id="como-funciona" className="bg-background">
             <div className="container text-center">
                 <h2 className="text-3xl font-headline font-bold tracking-tighter sm:text-4xl md:text-5xl">
                     ¿Cómo funciona?

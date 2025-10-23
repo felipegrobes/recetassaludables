@@ -29,7 +29,7 @@ const benefits: Benefit[] = [
 
 export default function Benefits() {
     return (
-      <section id="beneficios" className="bg-muted/50">
+      <section id="beneficios" className="bg-muted">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-headline font-bold tracking-tighter sm:text-4xl md:text-5xl">

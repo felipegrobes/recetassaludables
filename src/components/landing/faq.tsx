@@ -35,7 +35,7 @@ const faqItems = [
 
 export default function Faq() {
     return (
-      <section id="preguntas-frecuentes" className="bg-muted/50">
+      <section id="preguntas-frecuentes" className="bg-background">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-headline font-bold tracking-tighter sm:text-4xl md:text-5xl">
