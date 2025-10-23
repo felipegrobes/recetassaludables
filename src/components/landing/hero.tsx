@@ -44,9 +44,6 @@ export default function Hero() {
                   <span className="text-xl ml-2 group-hover:scale-125 transition-transform">✨</span>
                 </Link>
               </Button>
-              <Button asChild size="lg" variant="outline">
-                <Link href="#comprar">Ver Planes y Precios</Link>
-              </Button>
             </div>
           </div>
         </div>
