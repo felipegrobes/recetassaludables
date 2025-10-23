@@ -37,7 +37,7 @@ export default function BookContents() {
             >
               <CardHeader className="items-center p-0">
                 <div className="w-full aspect-square relative mb-4 p-5">
-                  <Image src={item.image} alt={item.title} layout="fill" objectFit="cover" className="rounded-[10%]" />
+                  <Image src={item.image} alt={item.title} width={400} height={400} objectFit="cover" className="rounded-[10%]" />
                 </div>
                 <CardTitle className="text-lg font-semibold px-4 pb-4">{item.title}</CardTitle>
               </CardHeader>
