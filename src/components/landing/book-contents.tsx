@@ -23,7 +23,7 @@ export default function BookContents() {
       <div className="container">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-headline font-bold tracking-tighter sm:text-4xl md:text-5xl">
-            Mira lo que vas a recibir en el libro:
+            Mira lo que vas a recibir en los libros:
           </h2>
         </div>
 
@@ -35,7 +35,7 @@ export default function BookContents() {
             >
               <CardHeader className="items-center p-0">
                 <div className="w-full aspect-square relative mb-4 p-5">
-                  <Image src={item.image} alt={item.title} layout="fill" objectFit="cover" className="rounded-2xl" />
+                  <Image src={item.image} alt={item.title} layout="fill" objectFit="cover" className="rounded-[10%]" />
                 </div>
                 <CardTitle className="text-lg font-semibold px-4 pb-4">{item.title}</CardTitle>
               </CardHeader>
