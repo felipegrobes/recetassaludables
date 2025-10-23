@@ -6,8 +6,6 @@ import Pricing from '@/components/landing/pricing';
 import Bonuses from '@/components/landing/bonuses';
 import Testimonials from '@/components/landing/testimonials';
 import Faq from '@/components/landing/faq';
-import Cta from '@/components/landing/cta';
-import Footer from '@/components/landing/footer';
 
 export default function LandingPage() {
   return (
@@ -21,9 +19,7 @@ export default function LandingPage() {
         <Bonuses />
         <Testimonials />
         <Faq />
-        <Cta />
       </main>
-      <Footer />
     </div>
   );
 }
