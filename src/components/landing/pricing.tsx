@@ -44,7 +44,6 @@ export default function Pricing() {
                     <Card className="flex flex-col bg-card">
                         <CardHeader>
                             <CardTitle className="font-headline text-2xl">Plan Básico</CardTitle>
-                            <CardDescription>Perfecto para empezar tu viaje saludable.</CardDescription>
                             <div className="text-4xl font-bold pt-4">$3,90 <span className="text-lg font-medium text-muted-foreground">USD</span></div>
                         </CardHeader>
                         <CardContent className="flex-1">
@@ -70,7 +69,6 @@ export default function Pricing() {
                         <Badge variant="secondary" className="absolute -top-3 left-1/2 -translate-x-1/2 bg-accent text-accent-foreground">Más Popular</Badge>
                         <CardHeader>
                             <CardTitle className="font-headline text-2xl">Plan Premium</CardTitle>
-                            <CardDescription>Acceso completo y de por vida para una transformación total.</CardDescription>
                             <div className="text-4xl font-bold pt-4">$5,90 <span className="text-lg font-medium text-muted-foreground">USD</span></div>
                         </CardHeader>
                         <CardContent className="flex-1">
