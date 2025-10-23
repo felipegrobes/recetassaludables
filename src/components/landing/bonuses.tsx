@@ -39,11 +39,9 @@ export default function Bonuses() {
 
                 <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
                     {bonuses.map((bonus, index) => (
-                        <Card key={index} className="group transition-all hover:shadow-xl hover:bg-muted/50">
-                            <CardContent className="p-6 flex items-start gap-6">
-                                <div className="bg-primary/10 p-3 rounded-lg group-hover:bg-primary transition-colors flex-shrink-0">
-                                    <Image src={bonus.image} alt={bonus.title} width={40} height={40} className="w-8 h-8 object-contain" />
-                                </div>
+                        <Card key={index} className="group transition-all hover:shadow-xl hover:bg-muted/50 overflow-hidden">
+                            <CardContent className="p-6 flex flex-col items-center text-center gap-4">
+                                <Image src={bonus.image} alt={bonus.title} width={150} height={150} className="w-48 h-48 object-contain rounded-lg" />
                                 <div>
                                     <h3 className="text-xl font-bold font-headline">{bonus.title}</h3>
                                     <p className="mt-1 text-muted-foreground">{bonus.description}</p>
