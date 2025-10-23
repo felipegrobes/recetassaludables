@@ -3,6 +3,7 @@ import { CheckCircle2, Gift } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
+import Image from 'next/image';
 
 const basicFeatures = [
   { text: "+1500 Recetas Saludables", icon: CheckCircle2, className: "text-green-500" }
@@ -74,6 +75,9 @@ export default function Pricing() {
                             <CardTitle className="font-headline text-2xl">Plan Premium</CardTitle>
                         </CardHeader>
                         <CardContent className="flex-1">
+                             <div className="mb-4 flex justify-center">
+                                <Image src="/images/Logo.webp" alt="eBook Premium" width={150} height={100} className="rounded-md" />
+                            </div>
                             <ul className="space-y-3">
                                 {premiumFeatures.map((feature, i) => (
                                     <li key={i} className="flex items-start gap-3">
