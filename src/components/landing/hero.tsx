@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export default function Hero() {
@@ -25,9 +24,6 @@ export default function Hero() {
       <div className="container relative">
         <div className="grid md:grid-cols-1 gap-12 items-center">
           <div className="flex flex-col items-center text-center gap-6">
-            <Badge variant="outline" className="border-green-300 bg-green-100 text-green-800 py-1 px-3">
-              💚 Más de 5.000 clientes felices
-            </Badge>
 
             <h1 className="text-4xl font-headline font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl animate-slide-in-down [animation-delay:200ms]">
               ¡Más de 1500 Recetas Saludables que Cambiarán tu Vida!
