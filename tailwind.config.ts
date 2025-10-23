@@ -102,13 +102,18 @@ export default {
         'fade-in': {
           from: { opacity: '0' },
           to: { opacity: '1' },
-        }
+        },
+        'breathing': {
+          '0%, 100%': { transform: 'scale(1)' },
+          '50%': { transform: 'scale(1.05)' },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
         'slide-in-down': 'slide-in-down 0.6s ease-out forwards',
         'fade-in': 'fade-in 0.6s ease-out forwards',
+        'breathing': 'breathing 2s ease-in-out infinite',
       },
     },
   },

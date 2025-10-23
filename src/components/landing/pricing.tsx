@@ -91,7 +91,7 @@ export default function Pricing() {
                         </CardContent>
                         <CardFooter className="flex-col items-stretch gap-4">
                             <div className="text-5xl font-bold text-center">$5,90 <span className="text-2xl font-medium text-muted-foreground">USD</span></div>
-                            <Button asChild className="w-full">
+                            <Button asChild className="w-full animate-breathing">
                                 <Link href="#">Elegir Premium</Link>
                             </Button>
                             <div className="text-center mt-2 max-w-md mx-auto">
