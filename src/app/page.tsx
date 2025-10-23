@@ -1,4 +1,3 @@
-import Navbar from '@/components/landing/navbar';
 import Hero from '@/components/landing/hero';
 import Partners from '@/components/landing/partners';
 import Benefits from '@/components/landing/benefits';
@@ -13,7 +12,6 @@ import Footer from '@/components/landing/footer';
 export default function LandingPage() {
   return (
     <div className="flex min-h-dvh flex-col">
-      <Navbar />
       <main className="flex-1">
         <Hero />
         <Partners />
