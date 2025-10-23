@@ -41,7 +41,7 @@ export default function Bonuses() {
                     {bonuses.map((bonus, index) => (
                         <Card key={index} className="group transition-all hover:shadow-xl overflow-hidden border-2 border-primary">
                             <CardContent className="p-6 flex flex-col items-center text-center gap-4">
-                                <Image src={bonus.image} alt={bonus.title} width={150} height={150} className="w-48 h-48 object-contain" />
+                                <Image src={bonus.image} alt={bonus.title} width={150} height={150} className="w-48 h-48 object-contain rounded-2xl" />
                                 <div>
                                     <h3 className="text-xl font-bold font-headline">{bonus.title}</h3>
                                     <p className="mt-1 text-muted-foreground">{bonus.description}</p>
