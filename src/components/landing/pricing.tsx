@@ -1,26 +1,30 @@
 import Link from 'next/link';
-import { CheckCircle2 } from 'lucide-react';
+import { CheckCircle2, Gift } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 
 const basicFeatures = [
-  "+1500 Recetas Saludables",
-  "Guías de nutrición",
-  "Planes de comidas semanales",
-  "Acceso a comunidad exclusiva"
+  { text: "+1500 Recetas Saludables", icon: CheckCircle2, className: "text-green-500" },
+  { text: "Guías de nutrición", icon: CheckCircle2, className: "text-green-500" },
+  { text: "Planes de comidas semanales", icon: CheckCircle2, className: "text-green-500" },
+  { text: "Acceso a comunidad exclusiva", icon: CheckCircle2, className: "text-green-500" }
 ];
 
 const premiumFeatures = [
   ...basicFeatures,
-  "50 Recetas de Postres sin Azúcar",
-  "Recetas de Tortillas Saludables",
-  "Recetas de Sopas y Cremas",
-  "Recetas de Salsas y Patés",
-  "Recetas de Panes sin Gluten",
-  "Recetas de Harinas sin Gluten",
-  "Pizzas Saludables",
-  "Detox Hepático, Limpia tu Hígado en 7 Días"
+  { text: "50 Recetas de Postres sin Azúcar", icon: CheckCircle2, className: "text-green-500" },
+  { text: "Recetas de Tortillas Saludables", icon: CheckCircle2, className: "text-green-500" },
+  { text: "Recetas de Sopas y Cremas", icon: CheckCircle2, className: "text-green-500" },
+  { text: "Recetas de Salsas y Patés", icon: CheckCircle2, className: "text-green-500" },
+  { text: "Recetas de Panes sin Gluten", icon: CheckCircle2, className: "text-green-500" },
+  { text: "Recetas de Harinas sin Gluten", icon: CheckCircle2, className: "text-green-500" },
+  { text: "Pizzas Saludables", icon: CheckCircle2, className: "text-green-500" },
+  { text: "Detox Hepático, Limpia tu Hígado en 7 Días", icon: CheckCircle2, className: "text-green-500" },
+  { text: "Bono: Tabla Personalizada", icon: Gift, className: "text-orange-500" },
+  { text: "Bono: Lista de Compras Inteligente", icon: Gift, className: "text-orange-500" },
+  { text: "Bono: 15 Bebidas Saludables", icon: Gift, className: "text-orange-500" },
+  { text: "Bono: 15 Recetas de Helados", icon: Gift, className: "text-orange-500" },
 ];
 
 export default function Pricing() {
@@ -47,8 +51,8 @@ export default function Pricing() {
                             <ul className="space-y-3">
                                 {basicFeatures.map((feature, i) => (
                                     <li key={i} className="flex items-center gap-2">
-                                        <CheckCircle2 className="w-5 h-5 text-green-500" />
-                                        <span>{feature}</span>
+                                        <feature.icon className={`w-5 h-5 ${feature.className}`} />
+                                        <span>{feature.text}</span>
                                     </li>
 
                                 ))}
@@ -73,8 +77,8 @@ export default function Pricing() {
                             <ul className="space-y-3">
                                 {premiumFeatures.map((feature, i) => (
                                     <li key={i} className="flex items-center gap-2">
-                                        <CheckCircle2 className="w-5 h-5 text-green-500" />
-                                        <span>{feature}</span>
+                                        <feature.icon className={`w-5 h-5 ${feature.className}`} />
+                                        <span>{feature.text}</span>
                                     </li>
                                 ))}
                             </ul>
