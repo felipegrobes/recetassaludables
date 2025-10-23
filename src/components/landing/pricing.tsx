@@ -50,8 +50,8 @@ export default function Pricing() {
                         <CardContent className="flex-1">
                             <ul className="space-y-3">
                                 {basicFeatures.map((feature, i) => (
-                                    <li key={i} className="flex items-center gap-2">
-                                        <feature.icon className={`w-5 h-5 ${feature.className}`} />
+                                    <li key={i} className="flex items-start gap-3">
+                                        <feature.icon className={`w-5 h-5 flex-shrink-0 mt-1 ${feature.className}`} />
                                         <span>{feature.text}</span>
                                     </li>
 
@@ -76,8 +76,8 @@ export default function Pricing() {
                         <CardContent className="flex-1">
                             <ul className="space-y-3">
                                 {premiumFeatures.map((feature, i) => (
-                                    <li key={i} className="flex items-center gap-2">
-                                        <feature.icon className={`w-5 h-5 ${feature.className}`} />
+                                    <li key={i} className="flex items-start gap-3">
+                                        <feature.icon className={`w-5 h-5 flex-shrink-0 mt-1 ${feature.className}`} />
                                         <span>{feature.text}</span>
                                     </li>
                                 ))}
