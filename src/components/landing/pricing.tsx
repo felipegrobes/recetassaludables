@@ -59,7 +59,7 @@ export default function Pricing() {
                         <CardFooter className="flex-col items-stretch gap-4">
                             <div className="text-5xl font-bold text-center">$3,90 <span className="text-2xl font-medium text-muted-foreground">USD</span></div>
                             <Button asChild variant="outline" className="w-full">
-                                <Link href="#">Elegir Básico</Link>
+                                <Link href="https://pay.hotmart.com/X102576694W?checkoutMode=10">Elegir Básico</Link>
                             </Button>
                             <div className="text-center mt-2 max-w-md mx-auto">
                                 <p className="inline-block bg-destructive text-destructive-foreground font-bold text-sm px-2 py-1">¡NO TE PREOCUPES!</p>
