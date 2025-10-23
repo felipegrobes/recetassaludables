@@ -4,6 +4,7 @@ import Pricing from '@/components/landing/pricing';
 import Bonuses from '@/components/landing/bonuses';
 import Faq from '@/components/landing/faq';
 import AboutUs from '@/components/landing/about';
+import Guarantee from '@/components/landing/guarantee';
 
 export default function LandingPage() {
   return (
@@ -13,6 +14,7 @@ export default function LandingPage() {
         <Benefits />
         <Bonuses />
         <Pricing />
+        <Guarantee />
         <AboutUs />
         <Faq />
       </main>
