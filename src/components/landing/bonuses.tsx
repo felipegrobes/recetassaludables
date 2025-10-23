@@ -1,24 +1,24 @@
 import { Card, CardContent } from '@/components/ui/card';
-import { Target, ShoppingCart, Coffee, IceCream2 } from 'lucide-react';
+import Image from 'next/image';
 
 const bonuses = [
     {
-        icon: Target,
+        image: '/images/Tabla.webp',
         title: 'Tabla Personalizada',
         description: 'Una guía para adaptar las recetas a tus objetivos específicos.',
     },
     {
-        icon: ShoppingCart,
+        image: '/images/Lista.webp',
         title: 'Lista de Compras Inteligente',
         description: 'Listas de compras semanales para ahorrar tiempo y dinero.',
     },
     {
-        icon: Coffee,
+        image: '/images/15 Bebidas.webp',
         title: '15 Bebidas Saludables',
         description: 'Descubre bebidas deliciosas para energizar tu día.',
     },
     {
-        icon: IceCream2,
+        image: '/images/15 Recetas.webp',
         title: '15 Recetas de Helados',
         description: 'Postres saludables para disfrutar sin culpa.',
     },
@@ -41,8 +41,8 @@ export default function Bonuses() {
                     {bonuses.map((bonus, index) => (
                         <Card key={index} className="group transition-all hover:shadow-xl hover:bg-muted/50">
                             <CardContent className="p-6 flex items-start gap-6">
-                                <div className="bg-primary/10 p-3 rounded-lg group-hover:bg-primary transition-colors">
-                                    <bonus.icon className="h-8 w-8 text-primary group-hover:text-primary-foreground transition-colors" />
+                                <div className="bg-primary/10 p-3 rounded-lg group-hover:bg-primary transition-colors flex-shrink-0">
+                                    <Image src={bonus.image} alt={bonus.title} width={40} height={40} className="w-8 h-8 object-contain" />
                                 </div>
                                 <div>
                                     <h3 className="text-xl font-bold font-headline">{bonus.title}</h3>
