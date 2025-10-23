@@ -43,7 +43,7 @@ export default function Bonuses() {
                             <CardContent className="p-6 flex flex-col items-center text-center gap-4">
                                 <Image src={bonus.image} alt={bonus.title} width={150} height={150} className="w-48 h-48 object-contain rounded-[10%]" />
                                 <div>
-                                    <h3 className="text-xl font-bold font-headline">{bonus.title}</h3>
+                                    <h3 className="text-xl font-bold font-headline">Regalo {String(index + 1).padStart(2, '0')}: {bonus.title}</h3>
                                     <p className="mt-1 text-muted-foreground">{bonus.description}</p>
                                 </div>
                             </CardContent>
