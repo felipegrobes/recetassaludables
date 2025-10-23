@@ -2,6 +2,8 @@
 
 import Image from 'next/image';
 import { Card, CardHeader, CardTitle } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 
 interface BookContentItem {
   image: string;
@@ -45,6 +47,11 @@ export default function BookContents() {
         <p className="text-center text-2xl font-bold mt-8">
             Y mucho más...
         </p>
+        <div className="mt-8 text-center">
+          <Button asChild size="lg">
+            <Link href="#regalos">¡Quiero las Recetas!</Link>
+          </Button>
+        </div>
       </div>
     </section>
   );
