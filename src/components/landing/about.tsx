@@ -129,11 +129,7 @@ export default function AboutUs() {
                           stroke="hsl(var(--primary))"
                           strokeWidth={2}
                           fill="url(#colorSales)"
-                          dot={{
-                            r: 4,
-                            fill: 'hsl(var(--primary))',
-                            strokeWidth: 2,
-                          }}
+                          dot={false}
                           activeDot={{
                             r: 6,
                             fill: 'hsl(var(--primary))',
