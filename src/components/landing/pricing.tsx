@@ -19,6 +19,7 @@ const premiumFeatures = [
   { text: "Recetas de Harinas sin Gluten", icon: CheckCircle2, className: "text-green-500" },
   { text: "Pizzas Saludables", icon: CheckCircle2, className: "text-green-500" },
   { text: "Detox Hepático, Limpia tu Hígado en 7 Días", icon: CheckCircle2, className: "text-green-500" },
+  { text: "Recetas de té", icon: CheckCircle2, className: "text-green-500" },
   { text: "Regalo 01: Tabla Personalizada", icon: Gift, className: "text-orange-500" },
   { text: "Regalo 02: Lista de Compras Inteligente", icon: Gift, className: "text-orange-500" },
   { text: "Regalo 03: 15 Bebidas Saludables", icon: Gift, className: "text-orange-500" },
