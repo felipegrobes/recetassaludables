@@ -44,7 +44,6 @@ export default function Pricing() {
                     <Card className="flex flex-col bg-card">
                         <CardHeader>
                             <CardTitle className="font-headline text-2xl">Plan Básico</CardTitle>
-                            <div className="text-4xl font-bold pt-4">$3,90 <span className="text-lg font-medium text-muted-foreground">USD</span></div>
                         </CardHeader>
                         <CardContent className="flex-1">
                             <ul className="space-y-3">
@@ -58,7 +57,8 @@ export default function Pricing() {
                             </ul>
                             <p className="text-sm text-muted-foreground mt-4">Acceso por 6 meses</p>
                         </CardContent>
-                        <CardFooter>
+                        <CardFooter className="flex-col items-stretch gap-4">
+                            <div className="text-4xl font-bold text-center text-card-foreground">$3,90 <span className="text-lg font-medium text-muted-foreground">USD</span></div>
                             <Button asChild variant="outline" className="w-full">
                                 <Link href="#">Elegir Básico</Link>
                             </Button>
@@ -69,7 +69,6 @@ export default function Pricing() {
                         <Badge variant="secondary" className="absolute -top-3 left-1/2 -translate-x-1/2 bg-accent text-accent-foreground">Más Popular</Badge>
                         <CardHeader>
                             <CardTitle className="font-headline text-2xl">Plan Premium</CardTitle>
-                            <div className="text-4xl font-bold pt-4">$5,90 <span className="text-lg font-medium text-muted-foreground">USD</span></div>
                         </CardHeader>
                         <CardContent className="flex-1">
                             <ul className="space-y-3">
@@ -82,7 +81,8 @@ export default function Pricing() {
                             </ul>
                              <p className="text-sm font-bold text-primary mt-4">Acceso de por vida</p>
                         </CardContent>
-                        <CardFooter>
+                        <CardFooter className="flex-col items-stretch gap-4">
+                            <div className="text-4xl font-bold text-center text-card-foreground">$5,90 <span className="text-lg font-medium text-muted-foreground">USD</span></div>
                             <Button asChild className="w-full">
                                 <Link href="#">Elegir Premium</Link>
                             </Button>
