@@ -5,22 +5,22 @@ const bonuses = [
     {
         image: '/images/Tabla.webp',
         title: 'Tabla Personalizada',
-        description: 'Una guía para adaptar las recetas a tus objetivos específicos.',
+        description: 'Para que sepas qué receta elegir según tu alimentación.',
     },
     {
         image: '/images/Lista.webp',
         title: 'Lista de Compras Inteligente',
-        description: 'Listas de compras semanales para ahorrar tiempo y dinero.',
+        description: 'Para que sepas exactamente qué comprar y ahorres tiempo y dinero.',
     },
     {
         image: '/images/15 Bebidas.webp',
-        title: '15 Bebidas Saludables',
-        description: 'Descubre bebidas deliciosas para energizar tu día.',
+        title: '15 Bebidas para Desayuno, Almuerzo y Cena',
+        description: 'Recetas de cafés, jugos y tés para acompañar tus comidas.',
     },
     {
         image: '/images/15 Recetas.webp',
-        title: '15 Recetas de Helados',
-        description: 'Postres saludables para disfrutar sin culpa.',
+        title: '15 Recetas de Helados Saludables',
+        description: 'Helados deliciosos y nutritivos para refrescar tu día sin culpa.',
     },
 ];
 
