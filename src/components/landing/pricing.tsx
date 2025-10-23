@@ -59,6 +59,12 @@ export default function Pricing() {
                             <Button asChild variant="outline" className="w-full">
                                 <Link href="#">Elegir Básico</Link>
                             </Button>
+                            <div className="text-center mt-2 max-w-md mx-auto text-card-foreground">
+                                <p className="font-bold text-sm">¡NO TE PREOCUPES!</p>
+                                <p className="text-xs text-muted-foreground ">
+                                    El valor de $3,90 USD se convertirá automáticamente a tu moneda y podrás pagar con métodos locales de tu país.
+                                </p>
+                            </div>
                         </CardFooter>
                     </Card>
 
@@ -83,15 +89,14 @@ export default function Pricing() {
                             <Button asChild className="w-full">
                                 <Link href="#">Elegir Premium</Link>
                             </Button>
+                            <div className="text-center mt-2 max-w-md mx-auto text-card-foreground">
+                                <p className="font-bold text-sm">¡NO TE PREOCUPES!</p>
+                                <p className="text-xs text-muted-foreground">
+                                    El valor de $5,90 USD se convertirá automáticamente a tu moneda y podrás pagar con métodos locales de tu país.
+                                </p>
+                            </div>
                         </CardFooter>
                     </Card>
-                </div>
-
-                <div className="text-center mt-8 max-w-md mx-auto">
-                    <p className="font-bold text-lg">¡NO TE PREOCUPES!</p>
-                    <p className="text-sm text-primary-foreground/80 ">
-                        El valor de $5,90 USD se convertirá automáticamente a tu moneda y podrás pagar con métodos locales de tu país.
-                    </p>
                 </div>
             </div>
         </section>
