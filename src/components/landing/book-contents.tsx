@@ -42,6 +42,9 @@ export default function BookContents() {
             </Card>
           ))}
         </div>
+        <p className="text-center text-2xl font-bold mt-8">
+            Y mucho más...
+        </p>
       </div>
     </section>
   );
