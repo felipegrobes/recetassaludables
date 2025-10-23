@@ -34,7 +34,7 @@ export default function BookContents() {
               className="text-center group p-2 transition-all duration-300 hover:shadow-lg hover:-translate-y-2 overflow-hidden"
             >
               <CardHeader className="items-center p-0">
-                <div className="w-full aspect-square relative mb-4">
+                <div className="w-full aspect-square relative mb-4 p-5">
                   <Image src={item.image} alt={item.title} layout="fill" objectFit="cover" />
                 </div>
                 <CardTitle className="text-lg font-semibold px-4 pb-4">{item.title}</CardTitle>
