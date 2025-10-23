@@ -1,27 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export default function Hero() {
-  const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-background');
-
   return (
-    <section id="inicio" className="relative w-full pt-12 pb-12 md:pt-20 md:pb-20 lg:pt-28 lg:pb-28 overflow-hidden">
-      {heroImage && (
-        <Image
-          src={heroImage.imageUrl}
-          alt={heroImage.description}
-          data-ai-hint={heroImage.imageHint}
-          fill
-          className="object-cover"
-          priority
-        />
-      )}
-      <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/20 to-transparent" />
-      <div className="absolute inset-0 bg-gradient-to-r from-background via-background/50 to-transparent" />
-
-      <div className="container relative">
+    <section id="inicio" className="w-full pt-24 pb-12 md:pt-32 md:pb-20 lg:pt-40 lg:pb-28 bg-muted">
+      <div className="container">
         <div className="grid md:grid-cols-1 gap-12 items-center">
           <div className="flex flex-col items-center text-center gap-6">
 
