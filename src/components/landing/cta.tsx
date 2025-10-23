@@ -10,7 +10,7 @@ const trustIcons = [
 
 export default function Cta() {
     return (
-        <section id="cta-final" className="bg-primary/90 text-primary-foreground">
+        <section id="cta-final" className="clean-background text-primary-foreground">
             <div className="container text-center">
                 <h2 className="text-3xl font-headline font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl max-w-4xl mx-auto">
                     ¡Empieza hoy a transformar tu salud con más de 1500 recetas!

@@ -25,13 +25,13 @@ const premiumFeatures = [
 
 export default function Pricing() {
     return (
-        <section id="comprar" className="bg-background">
+        <section id="comprar" className="bg-primary text-primary-foreground">
             <div className="container">
                 <div className="max-w-3xl mx-auto text-center">
                     <h2 className="text-3xl font-headline font-bold tracking-tighter sm:text-4xl md:text-5xl">
                         Elige la mejor oferta para ti
                     </h2>
-                    <p className="mt-4 text-muted-foreground md:text-xl">
+                    <p className="mt-4 text-primary-foreground/80 md:text-xl">
                         Invierte en tu salud hoy con un pago único y acceso para siempre.
                     </p>
                 </div>
@@ -88,7 +88,7 @@ export default function Pricing() {
                     </Card>
                 </div>
 
-                <p className="text-center text-sm text-muted-foreground mt-8">
+                <p className="text-center text-sm text-primary-foreground/80 mt-8">
                     Compra con total seguridad. 30 días de garantía sin complicaciones.
                 </p>
             </div>
