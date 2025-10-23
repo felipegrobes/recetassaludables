@@ -31,7 +31,7 @@ export default function BookContents() {
           {bookContents.map((item, index) => (
             <Card
               key={index}
-              className="text-center group p-2 transition-all duration-300 hover:shadow-lg hover:-translate-y-2 overflow-hidden"
+              className="text-center group p-2 transition-all duration-300 hover:shadow-lg hover:-translate-y-2 overflow-hidden border-primary/20"
             >
               <CardHeader className="items-center p-0">
                 <div className="w-full aspect-square relative mb-4 p-5">
