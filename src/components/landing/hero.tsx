@@ -23,7 +23,7 @@ export default function Hero() {
 
             <div className="flex flex-col sm:flex-row gap-4 animate-slide-in-down [animation-delay:600ms]">
               <Button asChild size="lg" className="group">
-                <Link href="#comprar">
+                <Link href="#beneficios">
                   ¡Quiero mis Recetas!
                   <span className="text-xl ml-2 group-hover:scale-125 transition-transform">✨</span>
                 </Link>
