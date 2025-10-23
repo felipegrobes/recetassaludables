@@ -60,7 +60,7 @@ export default function Pricing() {
                                 <Link href="#">Elegir Básico</Link>
                             </Button>
                             <div className="text-center mt-2 max-w-md mx-auto text-card-foreground">
-                                <p className="font-bold text-sm">¡NO TE PREOCUPES!</p>
+                                <p className="font-bold text-sm text-destructive">¡NO TE PREOCUPES!</p>
                                 <p className="text-xs text-muted-foreground ">
                                     El valor de $3,90 USD se convertirá automáticamente a tu moneda y podrás pagar con métodos locales de tu país.
                                 </p>
@@ -90,7 +90,7 @@ export default function Pricing() {
                                 <Link href="#">Elegir Premium</Link>
                             </Button>
                             <div className="text-center mt-2 max-w-md mx-auto text-card-foreground">
-                                <p className="font-bold text-sm">¡NO TE PREOCUPES!</p>
+                                <p className="font-bold text-sm text-destructive">¡NO TE PREOCUPES!</p>
                                 <p className="text-xs text-muted-foreground">
                                     El valor de $5,90 USD se convertirá automáticamente a tu moneda y podrás pagar con métodos locales de tu país.
                                 </p>
