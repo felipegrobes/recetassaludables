@@ -1,3 +1,52 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-background",
+      "description": "A vibrant and fresh assortment of fruits and vegetables on a clean background.",
+      "imageUrl": "https://images.unsplash.com/photo-1567710593500-19fb333fe351?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxmcmVzaCUyMGluZ3JlZGllbnRzJTIwZm9vZHxlbnwwfHx8fDE3NjExOTQ0MzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "fresh ingredients food"
+    },
+    {
+      "id": "ebook-mockup",
+      "description": "A mockup of the '1500 Recetas Saludables' eBook covers.",
+      "imageUrl": "https://images.unsplash.com/photo-1748017185912-c2a467989758?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxlYm9vayUyMGNvdmVyJTIwY29va2Jvb2t8ZW58MHx8fHwxNzYxMTk0NDMyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ebook cover cookbook"
+    },
+    {
+      "id": "how-it-works-1",
+      "description": "Illustration for selecting a plan.",
+      "imageUrl": "https://images.unsplash.com/photo-1569011312883-031325587704?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzZWxlY3QlMjBjaG9pY2UlMjBvcHRpb25zfGVufDB8fHx8MTc2MTE5NDQzMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "select choice options"
+    },
+    {
+      "id": "how-it-works-2",
+      "description": "Illustration for making a secure payment.",
+      "imageUrl": "https://images.unsplash.com/photo-1733503747506-773e56e4078f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzZWN1cmUlMjBwYXltZW50JTIwY3JlZGl0Y2FyZHxlbnwwfHx8fDE3NjExOTQ0MzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "secure payment creditcard"
+    },
+    {
+      "id": "how-it-works-3",
+      "description": "Illustration for instant access and download.",
+      "imageUrl": "https://images.unsplash.com/photo-1586187543706-b43086b30978?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxkb3dubG9hZCUyMGFjY2VzcyUyMGNvbXB1dGVyfGVufDB8fHx8MTc2MTE5NDQzMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "download access computer"
+    },
+    {
+      "id": "testimonial-1",
+      "description": "Portrait of a happy customer.",
+      "imageUrl": "https://images.unsplash.com/photo-1540569014015-19a7be504e3a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjExMjcwNDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "testimonial-2",
+      "description": "Portrait of a happy customer.",
+      "imageUrl": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjExMjcwNDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "testimonial-3",
+      "description": "Portrait of a happy customer.",
+      "imageUrl": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjExMjcwNDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person portrait"
+    }
+  ]
 }
