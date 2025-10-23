@@ -11,27 +11,27 @@ const faqItems = [
   {
     question: '¿Cómo recibiré los libros después de la compra?',
     answer:
-      'Inmediatamente después de la confirmación del pago, recibirás un correo electrónico de Hotmart con un enlace para acceder y descargar todos tus libros digitales. El acceso es instantáneo.',
+      'Una vez realizada la compra, recibirás en tu correo electrónico el enlace de acceso. Si necesitas ayuda, escríbenos a: digitalpay.ofc@gmail.com',
   },
   {
     question: '¿Es seguro comprar aquí?',
     answer:
-      'Sí, 100% seguro. El pago se procesa a través de Hotmart, una de las plataformas de productos digitales más grandes y seguras del mundo, que utiliza encriptación de extremo a extremo.',
+      '¡Sí! Es 100% seguro. La transacción está protegida con la tecnología de seguridad avanzada de Hotmart (empresa líder en pagos y alojamiento de productos digitales).',
   },
   {
     question: '¿Y si no me gusta el contenido?',
     answer:
-      'No hay problema. Ofrecemos una garantía de satisfacción incondicional de 30 días. Si no estás satisfecho por cualquier motivo, solo tienes que solicitar el reembolso y te devolveremos el 100% de tu dinero.',
+      'Tienes 30 días de garantía incondicional. Si no te gusta por cualquier motivo, te devolveemos el 100% de tu dinero, sin complicaciones.',
   },
   {
     question: '¿Durante cuánto tiempo tendré acceso?',
     answer:
-      'Depende del plan que elijas. El Plan Básico te da acceso por 6 meses. Con el Plan Premium, el acceso es tuyo para toda la vida, incluyendo todas las futuras actualizaciones sin coste adicional.',
+      'Actualmente tenemos 2 planes disponibles:\n\nPlan Básico → Acceso semestral (6 meses)\n\nPlan Premium → Acceso de por vida',
   },
   {
     question: '¿Los libros son físicos o digitales?',
     answer:
-      'Todos nuestros libros son 100% digitales en formato PDF. Esto te permite acceder a ellos desde cualquier dispositivo (móvil, tablet, ordenador) en cualquier momento y lugar.',
+      'Los libros son 100% digitales (formato eBook PDF). Puedes leerlos en tu celular, tablet o computadora, donde y cuando quieras.',
   },
 ];
 
@@ -55,7 +55,7 @@ export default function Faq() {
                 <AccordionTrigger className="text-lg text-left">
                   {item.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-base text-muted-foreground">
+                <AccordionContent className="text-base text-muted-foreground whitespace-pre-line">
                   {item.answer}
                 </AccordionContent>
               </AccordionItem>
