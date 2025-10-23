@@ -1,15 +1,13 @@
 'use client';
 
 import {
-  Line,
-  LineChart,
-  XAxis,
-  YAxis,
-  Tooltip,
-  ResponsiveContainer,
-  CartesianGrid,
   Area,
   AreaChart,
+  ResponsiveContainer,
+  Tooltip,
+  YAxis,
+  XAxis,
+  Label,
 } from 'recharts';
 import {
   Card,
@@ -21,26 +19,36 @@ import {
 import { useEffect, useState } from 'react';
 
 const chartData = [
-  { month: 'Ene', sales: 1200 },
-  { month: 'Feb', sales: 1800 },
-  { month: 'Mar', sales: 2500 },
-  { month: 'Abr', sales: 3200 },
-  { month: 'May', sales: 4100 },
-  { month: 'Jun', sales: 5213 },
+  { sales: 500 },
+  { sales: 1800 },
+  { sales: 1500 },
+  { sales: 3200 },
+  { sales: 2800 },
+  { sales: 5213 },
 ];
 
 const CustomTooltip = ({ active, payload, label }: any) => {
   if (active && payload && payload.length) {
     return (
       <div className="p-2 bg-background border rounded-lg shadow-lg">
-        <p className="font-bold">{`${
-          label
-        } : ${new Intl.NumberFormat().format(payload[0].value)}`}</p>
+        <p className="font-bold">{`${new Intl.NumberFormat().format(
+          payload[0].value
+        )}`}</p>
       </div>
     );
   }
   return null;
 };
+
+const CustomizedLabel = (props: any) => {
+  const { x, y, stroke, value } = props;
+  return (
+    <text x={x} y={y} dy={-10} fill="hsl(var(--primary))" fontSize={14} textAnchor="middle">
+      {new Intl.NumberFormat().format(value)}
+    </text>
+  );
+};
+
 
 export default function AboutUs() {
   const [isClient, setIsClient] = useState(false);
@@ -85,22 +93,12 @@ export default function AboutUs() {
                       <AreaChart
                         data={chartData}
                         margin={{
-                          top: 5,
+                          top: 20,
                           right: 20,
                           left: -10,
                           bottom: 5,
                         }}
                       >
-                        <CartesianGrid strokeDasharray="3 3" vertical={false} />
-                        <XAxis
-                          dataKey="month"
-                          tick={{ fill: 'hsl(var(--muted-foreground))' }}
-                          tickLine={{ stroke: 'hsl(var(--border))' }}
-                        />
-                        <YAxis
-                          tick={{ fill: 'hsl(var(--muted-foreground))' }}
-                          tickLine={{ stroke: 'hsl(var(--border))' }}
-                        />
                         <Tooltip
                           cursor={{ fill: 'hsl(var(--muted))' }}
                           content={<CustomTooltip />}
@@ -141,7 +139,16 @@ export default function AboutUs() {
                             fill: 'hsl(var(--primary))',
                             stroke: 'hsl(var(--background))',
                           }}
-                        />
+                        >
+                            <Label 
+                                content={<CustomizedLabel />}
+                                position="top"
+                                // @ts-ignore
+                                dataKey="sales"
+                                value={5213}
+                                className='bg-red-500'
+                            />
+                        </Area>
                       </AreaChart>
                     </ResponsiveContainer>
                   )}
