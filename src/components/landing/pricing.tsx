@@ -25,7 +25,7 @@ export default function Pricing() {
                 </div>
 
                 <div className="mt-12 grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                    <Card className="flex flex-col">
+                    <Card className="flex flex-col bg-card">
                         <CardHeader>
                             <CardTitle className="font-headline text-2xl">Plan Básico</CardTitle>
                             <CardDescription>Perfecto para empezar tu viaje saludable.</CardDescription>
@@ -35,7 +35,7 @@ export default function Pricing() {
                             <ul className="space-y-3">
                                 {features.slice(0, 2).map((feature, i) => (
                                     <li key={i} className="flex items-center gap-2">
-                                        <CheckCircle2 className="w-5 h-5 text-primary" />
+                                        <CheckCircle2 className="w-5 h-5 text-green-500" />
                                         <span>{feature}</span>
                                     </li>
                                 ))}
@@ -49,8 +49,8 @@ export default function Pricing() {
                         </CardFooter>
                     </Card>
 
-                    <Card className="flex flex-col border-2 border-primary shadow-2xl relative transition-transform hover:scale-105">
-                        <Badge className="absolute -top-3 left-1/2 -translate-x-1/2">Más Popular</Badge>
+                    <Card className="flex flex-col border-2 border-accent shadow-2xl relative transition-transform hover:scale-105 bg-card">
+                        <Badge className="absolute -top-3 left-1/2 -translate-x-1/2 bg-accent text-accent-foreground">Más Popular</Badge>
                         <CardHeader>
                             <CardTitle className="font-headline text-2xl">Plan Premium</CardTitle>
                             <CardDescription>Acceso completo y de por vida para una transformación total.</CardDescription>
@@ -60,7 +60,7 @@ export default function Pricing() {
                             <ul className="space-y-3">
                                 {features.map((feature, i) => (
                                     <li key={i} className="flex items-center gap-2">
-                                        <CheckCircle2 className="w-5 h-5 text-primary" />
+                                        <CheckCircle2 className="w-5 h-5 text-green-500" />
                                         <span>{feature}</span>
                                     </li>
                                 ))}
@@ -68,7 +68,7 @@ export default function Pricing() {
                              <p className="text-sm font-bold text-primary mt-4">Acceso de por vida</p>
                         </CardContent>
                         <CardFooter>
-                            <Button asChild className="w-full bg-primary hover:bg-primary/90">
+                            <Button asChild className="w-full">
                                 <Link href="#">Elegir Premium</Link>
                             </Button>
                         </CardFooter>
