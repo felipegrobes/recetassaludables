@@ -87,9 +87,12 @@ export default function Pricing() {
                     </Card>
                 </div>
 
-                <p className="text-center text-sm text-primary-foreground/80 mt-8">
-                    Compra con total seguridad. 30 días de garantía sin complicaciones.
-                </p>
+                <div className="text-center mt-8 max-w-md mx-auto">
+                    <p className="font-bold text-lg">¡NO TE PREOCUPES!</p>
+                    <p className="text-sm text-primary-foreground/80 ">
+                        El valor de $5,90 USD se convertirá automáticamente a tu moneda y podrás pagar con métodos locales de tu país.
+                    </p>
+                </div>
             </div>
         </section>
     );
