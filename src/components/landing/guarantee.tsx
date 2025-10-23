@@ -8,7 +8,7 @@ export default function Guarantee() {
       <div className="container">
         <div className="max-w-3xl mx-auto text-center border-2 border-primary/20 bg-card p-8 md:p-12 rounded-2xl shadow-lg">
             <div className="mx-auto mb-6 flex justify-center">
-                <Image src="/images/Garantia.webp" alt="Garantía de Satisfacción" width={80} height={80} />
+                <Image src="/images/Garantia.webp" alt="Garantía de Satisfacción" width={120} height={120} />
             </div>
             <h2 className="text-3xl font-headline font-bold tracking-tighter sm:text-4xl">
                 ¡Prueba primero y decide después!
