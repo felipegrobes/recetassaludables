@@ -93,12 +93,13 @@ export default function Pricing() {
                         <CardFooter className="flex-col items-stretch gap-4">
                             <div className="text-5xl font-bold text-center">$5,90 <span className="text-2xl font-medium text-muted-foreground">USD</span></div>
                             <Button asChild className="w-full animate-breathing">
-                                <Link href="#">Elegir Premium</Link>
+                                <Link href="https://pay.hotmart.com/D102577074B?checkoutMode=10">Elegir Premium</Link>
                             </Button>
                             <div className="text-center mt-2 max-w-md mx-auto">
                                 <p className="inline-block bg-destructive text-destructive-foreground font-bold text-sm px-2 py-1">¡NO TE PREOCUPES!</p>
                                 <p className="text-xs text-muted-foreground mt-2">
                                     El valor de $5,90 USD se convertirá automáticamente a tu moneda y podrás pagar con métodos locales de tu país.
+                               
                                 </p>
                             </div>
                         </CardFooter>
