@@ -56,7 +56,7 @@ export default function Pricing() {
                             <p className="text-sm text-muted-foreground mt-4">Acceso por 6 meses</p>
                         </CardContent>
                         <CardFooter className="flex-col items-stretch gap-4">
-                            <div className="text-4xl font-bold text-center">$3,90 <span className="text-lg font-medium text-muted-foreground">USD</span></div>
+                            <div className="text-6xl font-bold text-center">$3,90 <span className="text-2xl font-medium text-muted-foreground">USD</span></div>
                             <Button asChild variant="outline" className="w-full">
                                 <Link href="#">Elegir Básico</Link>
                             </Button>
@@ -77,7 +77,7 @@ export default function Pricing() {
                         </CardHeader>
                         <CardContent className="flex-1">
                              <div className="mb-4 flex justify-center">
-                                <Image src="/images/Logo.webp" alt="eBook Premium" width={338} height={225} className="rounded-md" />
+                                <Image src="/images/Logo.webp" alt="eBook Premium" width={507} height={338} className="rounded-md" />
                             </div>
                             <ul className="space-y-3">
                                 {premiumFeatures.map((feature, i) => (
@@ -90,7 +90,7 @@ export default function Pricing() {
                              <p className="text-sm font-bold text-primary mt-4">Acceso de por vida</p>
                         </CardContent>
                         <CardFooter className="flex-col items-stretch gap-4">
-                            <div className="text-4xl font-bold text-center">$5,90 <span className="text-lg font-medium text-muted-foreground">USD</span></div>
+                            <div className="text-6xl font-bold text-center">$5,90 <span className="text-2xl font-medium text-muted-foreground">USD</span></div>
                             <Button asChild className="w-full">
                                 <Link href="#">Elegir Premium</Link>
                             </Button>
