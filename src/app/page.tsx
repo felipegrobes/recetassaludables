@@ -2,7 +2,6 @@ import Hero from '@/components/landing/hero';
 import Benefits from '@/components/landing/benefits';
 import Pricing from '@/components/landing/pricing';
 import Bonuses from '@/components/landing/bonuses';
-import Testimonials from '@/components/landing/testimonials';
 import Faq from '@/components/landing/faq';
 
 export default function LandingPage() {
@@ -13,7 +12,6 @@ export default function LandingPage() {
         <Benefits />
         <Bonuses />
         <Pricing />
-        <Testimonials />
         <Faq />
       </main>
     </div>
