@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 
 export default function Hero() {
   return (
-    <section id="inicio" className="w-full pt-24 pb-12 md:pt-32 md:pb-20 lg:pt-40 lg:pb-28 bg-muted">
+    <section id="inicio" className="w-full pt-16 pb-12 md:pt-24 md:pb-20 lg:pt-28 lg:pb-28 bg-muted">
       <div className="container">
         <div className="grid md:grid-cols-1 gap-12 items-center">
           <div className="flex flex-col items-center text-center gap-6">
