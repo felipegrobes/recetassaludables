@@ -56,7 +56,11 @@ export default function Pricing() {
                             </ul>
                             <p className="text-sm text-muted-foreground mt-4">Acceso por 6 meses</p>
                         </CardContent>
-                        <CardFooter className="flex-col items-stretch gap-4">
+                        <CardFooter className="flex-col items-stretch gap-2">
+                            <div className='text-center'>
+                                <p className="text-xl line-through text-destructive">De $19,90 USD</p>
+                                <p className="text-sm text-muted-foreground">por solo</p>
+                            </div>
                             <div className="text-5xl font-bold text-center">$3,90 <span className="text-2xl font-medium text-muted-foreground">USD</span></div>
                             <Button asChild variant="outline" className="w-full">
                                 <Link href="https://pay.hotmart.com/X102576694W?checkoutMode=10">Elegir Básico</Link>
@@ -90,7 +94,11 @@ export default function Pricing() {
                             </ul>
                              <p className="text-sm font-bold text-primary mt-4">Acceso de por vida</p>
                         </CardContent>
-                        <CardFooter className="flex-col items-stretch gap-4">
+                        <CardFooter className="flex-col items-stretch gap-2">
+                            <div className='text-center'>
+                                <p className="text-xl line-through text-destructive">De $49,90 USD</p>
+                                <p className="text-sm text-muted-foreground">por solo</p>
+                            </div>
                             <div className="text-5xl font-bold text-center">$5,90 <span className="text-2xl font-medium text-muted-foreground">USD</span></div>
                             <Button asChild className="w-full animate-breathing">
                                 <Link href="https://pay.hotmart.com/D102577074B?checkoutMode=10">Elegir Premium</Link>
