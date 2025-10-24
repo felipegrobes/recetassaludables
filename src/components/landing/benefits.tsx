@@ -10,7 +10,6 @@ import {
   Sparkles,
   Users,
 } from 'lucide-react';
-import { Card, CardHeader, CardTitle } from '@/components/ui/card';
 import { type LucideIcon } from 'lucide-react';
 
 interface Benefit {
