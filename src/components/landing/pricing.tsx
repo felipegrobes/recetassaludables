@@ -88,7 +88,7 @@ export default function Pricing() {
                                     ¡Aprovecha y llévate el <span className="font-bold text-accent">Plan Premium</span> con Acceso de por Vida y todos los regalos por solo <span className="font-bold text-primary">$4,90 USD</span>!
                                   </AlertDialogDescription>
                                 </AlertDialogHeader>
-                                <AlertDialogFooter className="flex-col-reverse sm:flex-col-reverse gap-2">
+                                <AlertDialogFooter className="flex-col sm:flex-row sm:justify-end gap-2">
                                   <AlertDialogAction asChild className="w-full sm:w-auto animate-breathing mt-0">
                                     <Link href="https://pay.hotmart.com/D102577074B?off=726u2dxu&checkoutMode=10">APROVECHAR EL DESCUENTO</Link>
                                   </AlertDialogAction>
