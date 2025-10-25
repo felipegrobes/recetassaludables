@@ -5,16 +5,15 @@ import { Card, CardHeader, CardTitle, CardContent, CardFooter } from '@/componen
 import { Badge } from '@/components/ui/badge';
 import Image from 'next/image';
 import {
-  AlertDialog,
-  AlertDialogAction,
-  AlertDialogCancel,
-  AlertDialogContent,
-  AlertDialogDescription,
-  AlertDialogFooter,
-  AlertDialogHeader,
-  AlertDialogTitle,
-  AlertDialogTrigger,
-} from "@/components/ui/alert-dialog"
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+  DialogClose,
+} from "@/components/ui/dialog"
 
 const basicFeatures = [
   { text: "+1500 Recetas Saludables", icon: CheckCircle2, className: "text-green-500" }
@@ -74,34 +73,34 @@ export default function Pricing() {
                             </div>
                             <div className="text-5xl font-bold text-center">$3,90 <span className="text-2xl font-medium text-muted-foreground">USD</span></div>
 
-                            <AlertDialog>
-                              <AlertDialogTrigger asChild>
+                            <Dialog>
+                              <DialogTrigger asChild>
                                 <Button variant="outline" className="w-full">Elegir Básico</Button>
-                              </AlertDialogTrigger>
-                              <AlertDialogContent>
-                                <AlertDialogHeader>
-                                  <AlertDialogTitle className="text-center text-2xl font-bold text-primary flex items-center justify-center gap-2">
+                              </DialogTrigger>
+                              <DialogContent>
+                                <DialogHeader>
+                                  <DialogTitle className="text-center text-2xl font-bold text-primary flex items-center justify-center gap-2">
                                     <PartyPopper className="h-6 w-6" />
                                     ¡Espera! Oferta Única
-                                  </AlertDialogTitle>
-                                  <AlertDialogDescription className="text-center text-lg">
+                                  </DialogTitle>
+                                  <DialogDescription className="text-center text-lg">
                                     ¡Aprovecha y llévate el <span className="font-bold text-foreground">Plan Premium</span> con Acceso de por Vida y todos los regalos por solo <span className="font-bold text-primary">$4,90 USD</span>!
-                                  </AlertDialogDescription>
-                                </AlertDialogHeader>
-                                <AlertDialogFooter className="flex-col sm:flex-col-reverse sm:justify-end gap-2">
-                                  <AlertDialogAction asChild className="w-full sm:w-auto animate-breathing mt-0">
+                                  </DialogDescription>
+                                </DialogHeader>
+                                <DialogFooter className="flex-col sm:flex-col-reverse sm:justify-center gap-2">
+                                  <Button asChild className="w-full sm:w-auto animate-breathing mt-0">
                                     <Link href="https://pay.hotmart.com/D102577074B?off=726u2dxu&checkoutMode=10">APROVECHAR EL DESCUENTO</Link>
-                                  </AlertDialogAction>
-                                  <AlertDialogCancel asChild>
+                                  </Button>
+                                  <DialogClose asChild>
                                       <Button variant="outline" className="w-full sm:w-auto mt-0" asChild>
                                         <Link href="https://pay.hotmart.com/X102576694W?checkoutMode=10">
                                             COMPRAR SOLO EL BÁSICO
                                         </Link>
                                       </Button>
-                                  </AlertDialogCancel>
-                                </AlertDialogFooter>
-                              </AlertDialogContent>
-                            </AlertDialog>
+                                  </DialogClose>
+                                </DialogFooter>
+                              </DialogContent>
+                            </Dialog>
 
 
                             <div className="text-center mt-2 max-w-md mx-auto">
