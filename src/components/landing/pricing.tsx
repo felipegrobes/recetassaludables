@@ -87,7 +87,7 @@ export default function Pricing() {
                                 </AlertDialogHeader>
                                 <AlertDialogFooter className="sm:justify-center gap-4">
                                   <AlertDialogAction asChild className="w-full sm:w-auto animate-breathing">
-                                    <Link href="https://pay.hotmart.com/D102577074B?checkoutMode=10&off=u2l4mhb0">APROVECHAR EL DESCUENTO</Link>
+                                    <Link href="https://pay.hotmart.com/D102577074B?off=726u2dxu&checkoutMode=10">APROVECHAR EL DESCUENTO</Link>
                                   </AlertDialogAction>
                                   <AlertDialogCancel asChild>
                                       <Button variant="outline" className="w-full sm:w-auto mt-0" asChild>
@@ -126,6 +126,7 @@ export default function Pricing() {
                                         <feature.icon className={`w-5 h-5 flex-shrink-0 mt-1 ${feature.className}`} />
                                         <span>{feature.text}</span>
                                     </li>
+
                                 ))}
                             </ul>
                              <p className="text-sm font-bold text-primary mt-4">Acceso de por vida</p>
