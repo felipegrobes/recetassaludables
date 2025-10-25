@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { CheckCircle2, Gift } from 'lucide-react';
+import { CheckCircle2, Gift, PartyPopper } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardHeader, CardTitle, CardContent, CardFooter } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -80,13 +80,16 @@ export default function Pricing() {
                               </AlertDialogTrigger>
                               <AlertDialogContent>
                                 <AlertDialogHeader>
-                                  <AlertDialogTitle className="text-center text-2xl font-bold text-primary">¡Espera! Oferta Única</AlertDialogTitle>
+                                  <AlertDialogTitle className="text-center text-2xl font-bold text-primary flex items-center justify-center gap-2">
+                                    <PartyPopper className="h-6 w-6" />
+                                    ¡Espera! Oferta Única
+                                  </AlertDialogTitle>
                                   <AlertDialogDescription className="text-center text-lg">
                                     ¡Aprovecha y llévate el <span className="font-bold text-accent">Plan Premium</span> con Acceso de por Vida y todos los regalos por solo <span className="font-bold text-primary">$4,90 USD</span>!
                                   </AlertDialogDescription>
                                 </AlertDialogHeader>
-                                <AlertDialogFooter className="sm:justify-center gap-4">
-                                  <AlertDialogAction asChild className="w-full sm:w-auto animate-breathing">
+                                <AlertDialogFooter className="flex-col-reverse sm:flex-col-reverse gap-2">
+                                  <AlertDialogAction asChild className="w-full sm:w-auto animate-breathing mt-0">
                                     <Link href="https://pay.hotmart.com/D102577074B?off=726u2dxu&checkoutMode=10">APROVECHAR EL DESCUENTO</Link>
                                   </AlertDialogAction>
                                   <AlertDialogCancel asChild>
