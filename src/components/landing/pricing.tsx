@@ -1,9 +1,20 @@
 import Link from 'next/link';
 import { CheckCircle2, Gift } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from '@/components/ui/card';
+import { Card, CardHeader, CardTitle, CardContent, CardFooter } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import Image from 'next/image';
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from "@/components/ui/alert-dialog"
 
 const basicFeatures = [
   { text: "+1500 Recetas Saludables", icon: CheckCircle2, className: "text-green-500" }
@@ -62,9 +73,34 @@ export default function Pricing() {
                                 <p className="text-sm text-muted-foreground">por solo</p>
                             </div>
                             <div className="text-5xl font-bold text-center">$3,90 <span className="text-2xl font-medium text-muted-foreground">USD</span></div>
-                            <Button asChild variant="outline" className="w-full">
-                                <Link href="https://pay.hotmart.com/X102576694W?checkoutMode=10">Elegir Básico</Link>
-                            </Button>
+
+                            <AlertDialog>
+                              <AlertDialogTrigger asChild>
+                                <Button variant="outline" className="w-full">Elegir Básico</Button>
+                              </AlertDialogTrigger>
+                              <AlertDialogContent>
+                                <AlertDialogHeader>
+                                  <AlertDialogTitle className="text-center text-2xl font-bold text-primary">¡Espera! Oferta Única</AlertDialogTitle>
+                                  <AlertDialogDescription className="text-center text-lg">
+                                    ¡Aprovecha y llévate el <span className="font-bold text-accent">Plan Premium</span> con Acceso de por Vida y todos los regalos por solo <span className="font-bold text-primary">$4,90 USD</span>!
+                                  </AlertDialogDescription>
+                                </AlertDialogHeader>
+                                <AlertDialogFooter className="sm:justify-center gap-4">
+                                  <AlertDialogAction asChild className="w-full sm:w-auto animate-breathing">
+                                    <Link href="https://pay.hotmart.com/D102577074B?checkoutMode=10&off=u2l4mhb0">APROVECHAR EL DESCUENTO</Link>
+                                  </AlertDialogAction>
+                                  <AlertDialogCancel asChild>
+                                      <Button variant="outline" className="w-full sm:w-auto mt-0" asChild>
+                                        <Link href="https://pay.hotmart.com/X102576694W?checkoutMode=10">
+                                            COMPRAR SOLO EL BÁSICO
+                                        </Link>
+                                      </Button>
+                                  </AlertDialogCancel>
+                                </AlertDialogFooter>
+                              </AlertDialogContent>
+                            </AlertDialog>
+
+
                             <div className="text-center mt-2 max-w-md mx-auto">
                                 <p className="inline-block bg-destructive text-destructive-foreground font-bold text-sm px-2 py-1">¡NO TE PREOCUPES!</p>
                                 <p className="text-xs text-muted-foreground mt-2">
