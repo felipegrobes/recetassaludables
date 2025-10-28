@@ -18,7 +18,7 @@ export default function Hero() {
             </p>
 
             <div className="my-4 animate-slide-in-down [animation-delay:500ms]">
-                <Image src="/images/Logo.webp" alt="eBook Mockup" className="rounded-lg" width={400} height={300} priority />
+                <Image src="/images/Produto.webp" alt="eBook Mockup" className="rounded-lg" width={400} height={300} priority />
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 animate-slide-in-down [animation-delay:600ms]">

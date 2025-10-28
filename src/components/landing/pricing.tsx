@@ -120,7 +120,7 @@ export default function Pricing() {
                         </CardHeader>
                         <CardContent className="flex-1">
                              <div className="mb-4 flex justify-center">
-                                <Image src="/images/Logo.webp" alt="eBook Premium" className="rounded-md" width={610} height={407} />
+                                <Image src="/images/Produto.webp" alt="eBook Premium" className="rounded-md" width={610} height={407} />
                             </div>
                             <ul className="space-y-3">
                                 {premiumFeatures.map((feature, i) => (
