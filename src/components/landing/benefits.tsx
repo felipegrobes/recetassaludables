@@ -9,6 +9,7 @@ import {
   BedDouble,
   Sparkles,
   Users,
+  CakeSlice,
 } from 'lucide-react';
 import { type LucideIcon } from 'lucide-react';
 
@@ -18,6 +19,7 @@ interface Benefit {
 }
 
 const benefits: Benefit[] = [
+  { icon: CakeSlice, title: 'Comer dulces y postres deliciosos y saludables' },
   { icon: UtensilsCrossed, title: 'Comer platos deliciosos sin sentir culpa' },
   { icon: Scale, title: 'Bajar de peso sin renunciar al sabor' },
   { icon: Zap, title: 'Tener más energía y vitalidad' },
