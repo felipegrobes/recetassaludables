@@ -11,12 +11,12 @@ interface BookContentItem {
 }
 
 const bookContents: BookContentItem[] = [
+  { image: '/images/Dulces.webp', title: 'Dulces y Postres' },
   { image: '/images/Desayunos.webp', title: 'Desayunos y Meriendas' },
   { image: '/images/Almuerzos.webp', title: 'Almuerzos y Cenas' },
-  { image: '/images/Dulces.webp', title: 'Dulces y Postres' },
   { image: '/images/Salsas.webp', title: 'Salsas y Patés' },
   { image: '/images/Sopas.webp', title: 'Sopas y Cremas' },
-  { image: '/images/Panes.webp', title: 'Panes Saludables' },
+  { image: '/images/Panes.webp', 'title': 'Panes Saludables' },
 ];
 
 export default function BookContents() {
