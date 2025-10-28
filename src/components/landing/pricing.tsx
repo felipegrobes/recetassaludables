@@ -21,7 +21,7 @@ const basicFeatures = [
 
 const premiumFeatures = [
   ...basicFeatures,
-  { text: "50 Recetas de Postres sin Azúcar", icon: CheckCircle2, className: "text-green-500" },
+  { text: "+50 Recetas de Postres sin Azúcar", icon: CheckCircle2, className: "text-green-500" },
   { text: "Recetas de Tortillas Saludables", icon: CheckCircle2, className: "text-green-500" },
   { text: "Recetas de Sopas y Cremas", icon: CheckCircle2, className: "text-green-500" },
   { text: "Recetas de Salsas y Patés", icon: CheckCircle2, className: "text-green-500" },
@@ -87,7 +87,7 @@ export default function Pricing() {
                                     ¡Aprovecha y llévate el <span className="font-bold text-foreground">Plan Premium</span> con Acceso de por Vida y todos los regalos por solo <span className="font-bold text-primary">$4,90 USD</span>!
                                   </DialogDescription>
                                 </DialogHeader>
-                                <DialogFooter className="flex-col sm:flex-col-reverse sm:justify-center gap-2">
+                                <DialogFooter className="flex-col-reverse sm:flex-col-reverse sm:justify-center gap-2">
                                   <Button asChild className="w-full sm:w-auto animate-breathing mt-0">
                                     <Link href="https://pay.hotmart.com/D102577074B?off=726u2dxu&checkoutMode=10">APROVECHAR EL DESCUENTO</Link>
                                   </Button>
